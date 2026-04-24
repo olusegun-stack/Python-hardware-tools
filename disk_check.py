@@ -8,4 +8,4 @@ for disk in c.Win32_DiskDrive():
     for partition in disk.associators("Win32_DiskDriveToDiskPartition"):
         for logical_disk in partition.associators("Win32_LogicalDiskToPartition"):
             print(f"  {logical_disk.Caption} Size: {int(logical_disk.Size)/1024**3:.1f} GB")
-print("\nUsed during laptop diagnostics at Femtech IT Center")
+print("\nUsed during laptop diagnostics at EasyClinic IT Solutions")
